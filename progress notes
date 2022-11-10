@@ -1,0 +1,13 @@
+
+changed references to horizontal and vertical to  table bar and shelf
+
+added a table bar linit switch
+added a shelf limit switch
+
+added emergency stop button
+
+added LCD screen 2 row - I2C
+
+changed to MEGA due to interupt requirments on limit,home,emergency stop and operator switches
+
+
