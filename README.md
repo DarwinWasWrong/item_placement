@@ -44,22 +44,27 @@ The explanation is pretty important.
 
 on start, we have to check for what condition the machine is in.
 
-like did someone switch it off because of some reason, so it might be in a half finished position
-so we need to check
-
 1. proximity switch must be HIGH - no items
-2. VERTICAL_LIMIT should be off
-3. HORIZONTAL_LIMIT should be off
+2. SHELF LIMIT should be OFF
+3. SHELF HOME  ON
+3. TABLE BAR LIMIT should be off
+4. TABLE BAR HOME should be ON
+5. EMERGENCY SWITCH OFF 
+
 
 
 
 Home Button - Sends vert motors down and Horizonal motors back until they hit switches to stop them.
+Start button - Sends Horizonal motors forward periodically pausing when the prox switch is triggered
+              finally completely finishing its cycle once a switch is triggered at the end of the cycle.
 
-Start button - Sends Horizonal motors forward periodically pausing when the prox switch is triggered and finally completely finishing its cycle once a switch is triggered at the end of the cycle.
 
-If there is a reason it has to stop during a run. (Power outage or issue) Id like to hit the home button then start button.
 
 https://drive.google.com/file/d/1pfGOSFMlpMy-eEsUMzlPYLCXtyfiZos6/view?usp=sharing
+
+
+![image](https://user-images.githubusercontent.com/6262140/201214316-00f1b181-aa46-48e0-b15e-6469dc070c17.png)
+stepper drivers
 
 
 
