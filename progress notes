@@ -11,3 +11,34 @@ added LCD screen 2 row - I2C
 changed to MEGA due to interupt requirments on limit,home,emergency stop and operator switches
 
 
+https://wokwi.com/projects/348030256696787540
+
+test code>
+
+this is the sim and the code for you to test.
+
+it should, if the steppers are not at home or limit, 
+move  the table bar to home.
+move the table bar to limit (eg at the front)
+move  the shelf to home.
+move the shelf to limit (eg UP position)
+
+then
+
+the "startup" - which will check the switches and move both shelf and table bar  to home
+
+if the home button is not responding, you may have to fiddle with the debounce figure|
+on line  77/78
+
+// operator  buttons debounce
+long debounceTime = 10;
+.
+you may need to increase or decrease the value - in steps of ten
+It has saftey checks - if you do startup and both limit and home on any system are both on - thats impossible.
+also -we need to check the speed and the stopping.
+
+the steppers have acceleration and deceleration settings.
+if it doesnt stop in time after a limit or home switch is hit - then we have to adjust
+
+
+
