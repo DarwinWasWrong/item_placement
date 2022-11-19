@@ -91,3 +91,15 @@ Auto Cycle- Table bar pushes parts forward, senses a part then stops, shelf up, 
 When no part is sensed , shelf down, push forward till part sensed, stop, shelf up, stop When table pusher reaches forward switch and no more parts on table, stop. 
 End of program.
 
+
+NEW PANEL
+![image](https://user-images.githubusercontent.com/6262140/202845173-b2097235-7f6d-4380-82c0-a9382b03ce0c.png)
+
+
+
+
+
+
+
+
+
