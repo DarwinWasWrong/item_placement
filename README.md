@@ -70,3 +70,24 @@ stepper drivers
 ![image](https://user-images.githubusercontent.com/6262140/201253898-47970235-4525-4e90-82b8-a53078c2a4dc.png)
 
 
+
+Changes :
+
+
+Replace Home button with: 
+
+Button- raise shelf , stop at switch only 
+Button- lower shelf , stop at switch only 
+Button- table bar back, stop when button is released, max stroke at switch
+Button- table bar forward, stop when bottom is released, max stroke at switch
+Button Start- 
+shelf must be lowered all the way to the switch. 
+If shelf is up, then lower it in the program. 
+If shelf is down, then just start.
+
+ Also the table bar must be allowed to be positioned anywhere between the forward and back switch 
+
+Auto Cycle- Table bar pushes parts forward, senses a part then stops, shelf up, stop 
+When no part is sensed , shelf down, push forward till part sensed, stop, shelf up, stop When table pusher reaches forward switch and no more parts on table, stop. 
+End of program.
+
