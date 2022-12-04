@@ -1,6 +1,6 @@
 /*
 
-when testing in WOKWI, be aware that there are limit switch positions that
+when testing here, be aware that there are limit switch positions that
 are not possible in real life.
 Like leaving the limit switch on when you are testing the home
 If you are moving from home, then switch home limit OFF
@@ -12,6 +12,24 @@ failure to do so - isnt real life and will result in strange behaviour
 
 
 The LCD display is a bit off - but in this test could not be bothered
+
+
+E Series Nema 23 Bipolar 1.8deg 3.0 Nm(425oz.in) 4.2A 57x57x113mm 4 Wires
+
+    Manufacturer Part Number: 23HE45-4204S
+    Number of phase: 2
+    Step Angle: 1.8 deg
+    Holding Torque: 3.0 Nm(425oz.in)
+    Rated Current/phase: 4.2 A
+    Phase Resistance: 0.9 ohms± 10%
+    Inductance: 3.8 mH ± 20%(1KHz)
+
+Step Angle: 1.8 deg
+200 steps per revolution
+
+@ 1/2 stepping, that will give you 400 steps per revolution
+That is set on the Digital Microstep driver DM542 Stepper Motor Controller
+Which we do not have here.
 
 */
 
@@ -194,7 +212,7 @@ void setup() {
 
   // Stepper Horizonal
   TABLE_BAR.setEnablePin(TABLE_BAR_STEPPER_CONT_EN);
-  TABLE_BAR.setPinsInverted(false, false, true);
+  TABLE_BAR.setPinsInverted(true, false, true);
   TABLE_BAR.enableOutputs();
   TABLE_BAR.setMaxSpeed(2000);
   TABLE_BAR.setSpeed(2000);
@@ -202,7 +220,7 @@ void setup() {
 
   // Stepper Vertical
   PRODUCT_SHELF.setEnablePin(PRODUCT_SHELF_STEPPER_CONT_EN);
-  PRODUCT_SHELF.setPinsInverted(false, false, true);
+  PRODUCT_SHELF.setPinsInverted(true, false, true);
   PRODUCT_SHELF.enableOutputs();
   PRODUCT_SHELF.setMaxSpeed(2000);
   PRODUCT_SHELF.setSpeed(200);
