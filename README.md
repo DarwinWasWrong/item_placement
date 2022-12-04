@@ -106,7 +106,25 @@ Testing code for limits, homes, calibration and switches
 https://wokwi.com/projects/348433529264144980
 
 
+testing the motors were reversed. Changed the code to reverse the direction logic in the driver.
 
+https://wokwi.com/projects/348433529264144980
+
+
+E Series Nema 23 Bipolar 1.8deg 3.0 Nm(425oz.in) 4.2A 57x57x113mm 4 Wires
+
+    Manufacturer Part Number: 23HE45-4204S
+    Number of phase: 2
+    Step Angle: 1.8 deg
+    Holding Torque: 3.0 Nm(425oz.in)
+    Rated Current/phase: 4.2 A
+    Phase Resistance: 0.9 ohms± 10%
+    Inductance: 3.8 mH ± 20%(1KHz)
+
+Step Angle: 1.8 deg  200 steps per revolution
+@ 1/2 stepping, that will give you 400 steps per revolution
+
+So the physical driver change the switches to 400 steps from 10000/5000 steps
 
 
 
